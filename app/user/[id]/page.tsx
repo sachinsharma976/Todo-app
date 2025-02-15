@@ -5,12 +5,12 @@ import { useSession } from 'next-auth/react'; // Hook to access session data
 import { useRouter } from 'next/navigation'; // Hook for client-side navigation
 import { useState } from 'react';
 import { useGetTodosQuery } from '@/lib/store/services/todos'; // RTK Query hook to fetch todos
-import { privateTodoColumns } from '@/components/data-table/columns'; // Columns for the private todos table
-import { DataTable } from '@/components/data-table/data-table'; // Reusable data table component
-import { UserNav } from '@/components/auth/user-nav'; // User navigation component
+import { privateTodoColumns } from '@/components/Table/columns'; // Columns for the private todos table
+import { DataTable } from '@/components/Table/data-table'; // Reusable data table component
+import { UserNav } from '@/components/Navbar'; // User navigation component
 import { Button } from '@/components/ui/button'; // UI button component
 import { PlusCircle } from 'lucide-react'; // Icon for the add todo button
-import { CreateTodoDialog } from '@/components/todos/create-todo-dialog'; // Dialog for creating todos
+import { CreateTodoDialog } from '@/components/TodoDialogs/AddTodoDialog'; // Dialog for creating todos
 import ServerErrorPage from '@/components/ServerError';
 import Loader from '@/components/Loader';
 

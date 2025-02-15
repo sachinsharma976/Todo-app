@@ -1,6 +1,6 @@
-import { publicTodoColumns } from '@/components/data-table/columns'; // Columns for the data table
-import { DataTable } from '@/components/data-table/data-table'; // Reusable data table component
-import { UserNav } from '@/components/auth/user-nav'; // User navigation component
+import { publicTodoColumns } from '@/components/Table/columns'; // Columns for the data table
+import { DataTable } from '@/components/Table/data-table'; // Reusable data table component
+import { UserNav } from '@/components/Navbar'; // User navigation component
 import ServerErrorPage from '@/components/ServerError'; // Component to display server errors
 import SignInButton from '@/components/SignInButton'; // Button for signing in
 

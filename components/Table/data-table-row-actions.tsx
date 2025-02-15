@@ -13,8 +13,8 @@ import {
 } from '@/components/ui/dropdown-menu'; // Custom dropdown menu component
 import { Todo, useUpdateTodoMutation } from '@/lib/store/services/todos'; // Todo type and API mutation
 import { toast } from 'sonner'; // Toast notifications
-import { EditTodoDialog } from '@/components/todos/edit-todo-dialog'; // Edit dialog component
-import { DeleteTodoDialog } from '@/components/todos/delete-todo-dialog'; // Delete dialog component
+import { EditTodoDialog } from '@/components/TodoDialogs/EditTodoDialog'; // Edit dialog component
+import { DeleteTodoDialog } from '@/components/TodoDialogs/DeleteTodoDialog'; // Delete dialog component
 import { useSession } from 'next-auth/react'; // Session management
 
 // Props interface for the DataTableRowActions component
