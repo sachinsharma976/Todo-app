@@ -81,7 +81,7 @@ export function EditTodoDialog({ todo, open, onOpenChange }: EditTodoDialogProps
 
 	return (
 		<Dialog open={open} onOpenChange={onOpenChange}>
-			<DialogContent className='sm:max-w-[425px]'>
+			<DialogContent className='sm:max-w-[425px] w-[90%]'>
 				<DialogHeader>
 					<DialogTitle>Edit Todo</DialogTitle>
 					<DialogDescription>Update the details of your todo item.</DialogDescription>
@@ -91,7 +91,7 @@ export function EditTodoDialog({ todo, open, onOpenChange }: EditTodoDialogProps
 						{/* Title Input Field */}
 						<FormField
 							control={form.control}
-							name='title'
+							name='title'	
 							render={({ field }) => (
 								<FormItem>
 									<FormLabel>Title</FormLabel>

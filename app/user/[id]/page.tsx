@@ -12,6 +12,7 @@ import { Button } from '@/components/ui/button'; // UI button component
 import { PlusCircle } from 'lucide-react'; // Icon for the add todo button
 import { CreateTodoDialog } from '@/components/todos/create-todo-dialog'; // Dialog for creating todos
 import ServerErrorPage from '@/components/ServerError';
+import Loader from '@/components/Loader';
 
 // Props for the UserTodos component
 interface UserProfileProps {
@@ -38,8 +39,8 @@ export default function UserTodos({ params }: UserProfileProps) {
 	// Show loading state while fetching session or todos
 	if (status === 'loading' || isLoading) {
 		return (
-			<div className='flex h-screen items-center justify-center'>
-				<div className='text-lg'>Loading...</div>
+			<div className='flex items-center justify-center h-screen'>
+				<Loader />
 			</div>
 		);
 	}
@@ -68,7 +69,7 @@ export default function UserTodos({ params }: UserProfileProps) {
 			</div>
 
 			{/* Main content */}
-			<div className='container mx-auto py-10'>
+			<div className='container mx-auto py-10 px-8'>
 				{/* Button to open the create todo dialog */}
 				<Button
 					onClick={() => setIsCreateDialogOpen(true)}

@@ -62,6 +62,19 @@ const config: Config = {
         },
       },
       keyframes: {
+        'rollingRock': {
+          '0%': { transform: 'translate(0, -1em) rotate(-45deg)' },
+          '5%': { transform: 'translate(0, -1em) rotate(-50deg)' },
+          '20%': { transform: 'translate(1em, -2em) rotate(47deg)' },
+          '25%': { transform: 'translate(1em, -2em) rotate(45deg)' },
+          '30%': { transform: 'translate(1em, -2em) rotate(40deg)' },
+          '45%': { transform: 'translate(2em, -3em) rotate(137deg)' },
+          '50%': { transform: 'translate(2em, -3em) rotate(135deg)' },
+          '55%': { transform: 'translate(2em, -3em) rotate(130deg)' },
+          '70%': { transform: 'translate(3em, -4em) rotate(217deg)' },
+          '75%': { transform: 'translate(3em, -4em) rotate(220deg)' },
+          '100%': { transform: 'translate(0, -1em) rotate(-225deg)' },
+        },
         'accordion-down': {
           from: {
             height: '0',
@@ -80,6 +93,7 @@ const config: Config = {
         },
       },
       animation: {
+        'rollingRock': 'rollingRock 2.5s cubic-bezier(.79, 0, .47, .97) infinite',
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },

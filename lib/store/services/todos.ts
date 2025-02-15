@@ -46,7 +46,6 @@ export const todosApi = createApi({
 							}
 						)
 					);
-					toast.success('Todo added successfully'); // Success toast
 				} catch (err) {
 					toast.error('Failed to add todo'); // Error toast
 					console.error(err);
@@ -77,7 +76,6 @@ export const todosApi = createApi({
 							}
 						)
 					);
-					toast.success('Todo updated successfully'); // Success toast
 				} catch (err) {
 					toast.error('Failed to update todo'); // Error toast
 					console.error(err);
@@ -107,7 +105,6 @@ export const todosApi = createApi({
 							}
 						)
 					);
-					toast.success('Todo deleted successfully'); // Success toast
 				} catch (err) {
 					toast.error('Failed to delete todo'); // Error toast
 					console.error(err);

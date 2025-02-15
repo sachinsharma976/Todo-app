@@ -37,7 +37,7 @@ export default async function Home() {
 				</div>
 			</div>
 			{/* Data table to display todos */}
-			<div className='container mx-auto py-10'>
+			<div className='container mx-auto py-10 px-8'>
 				<DataTable columns={publicTodoColumns} data={data} />
 			</div>
 		</div>

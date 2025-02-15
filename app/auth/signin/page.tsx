@@ -17,6 +17,7 @@ import {
 } from '@/components/ui/form'; // Form components
 import { Input } from '@/components/ui/input'; // Input component
 import { toast } from 'sonner'; // Toast notifications library
+import Loader from '@/components/Loader';
 
 // Define the form schema using Zod
 const formSchema = z.object({
@@ -80,9 +81,7 @@ export default function SignIn() {
 	// Show loading state while checking session
 	if (status === 'loading') {
 		return (
-			<div className='flex min-h-screen items-center justify-center'>
-				<div className='text-lg'>Loading...</div>
-			</div>
+			<Loader />
 		);
 	}
 
