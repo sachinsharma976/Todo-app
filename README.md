@@ -85,6 +85,26 @@ pnpm dev
 ```
 This will launch the application at `http://localhost:3000`.
 
+## 🔐 Default User Credentials
+These are the pre-configured users with their login details:
+
+1. **John Doe**
+   * Email: admin@example.com
+   * Password: admin123
+
+2. **Alice Smith**
+   * Email: user1@example.com
+   * Password: user123
+
+3. **Bob Johnson**
+   * Email: user2@example.com
+   * Password: password123
+
+4. **Emma Davis**
+   * Email: user3@example.com
+   * Password: securePass
+
+
 ## Usage Guide
 
 1. **Home Page (SSR)**
